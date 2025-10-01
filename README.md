@@ -1,7 +1,7 @@
 # VibeLearn Mini - Interactive E-Learning Platform
-acess the app via 
+
+A modern, interactive e-learning platform built with vanilla JavaScript, featuring beautiful animations, user authentication, and comprehensive course management.acess the app via 
 https://vibelearn.netlify.app
-A modern, interactive e-learning platform built with vanilla JavaScript, featuring beautiful animations, user authentication, and comprehensive course management.
 
 
 ## 🚀 Features
