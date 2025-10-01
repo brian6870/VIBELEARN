@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeLearn - Interactive E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <!-- Background Bubbles -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <header>
+        <h1><a href="#" id="home-link">VibeLearn</a></h1>
+        <div id="user-section">
+            <div id="user-info" class="hidden">
+                <img id="user-avatar" src="" alt="User Avatar">
+                <span id="user-name"></span>
+                <button id="sign-out" class="btn btn-secondary">Sign Out</button>
+            </div>
+            <div id="sign-in-container">
+                <div id="g_id_onload"
+                    data-client_id="443413171725-tn4qbjbdojgpsu74u24aab62cark5pb2.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-callback="handleGoogleSignIn"
+                    data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="pill"
+                    data-theme="filled_blue"
+                    data-text="signin_with"
+                    data-size="large"
+                    data-logo_alignment="left">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Homepage View -->
+        <section id="home-view" class="view active">
+            <h2>Available Courses</h2>
+            <div id="courses-container" class="courses-grid">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Course Details View -->
+        <section id="course-details-view" class="view">
+            <button id="back-button" class="back-btn">← Back to Courses</button>
+            <div id="course-details">
+                <!-- Course details will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Flashcards View -->
+        <section id="flashcards-view" class="view">
+            <button id="back-from-flashcards" class="back-btn">← Back to Course</button>
+            <div id="flashcards-container">
+                <!-- Flashcards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
