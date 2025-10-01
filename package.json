@@ -1,0 +1,10 @@
+{
+  "name": "vibelearn-mini",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build step needed for static files'"
+  },
+  "devDependencies": {
+    "@vercel/static-build": "^1.0.0"
+  }
+}
